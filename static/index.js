@@ -341,10 +341,10 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 49) return '就这？';
-    if (score <= 99) return 'wow';
-    if (score <= 149) return '你可是重点高中的学生啊';
-    if (score <= 199) return '你的分数高到不知道怎么表扬你了';
+    if (score <= 49) return '火自己都灭了';
+    if (score <= 99) return '5楼无了';
+    if (score <= 149) return '3栋都被你炸没了';
+    if (score <= 199) return '实验都被你扬了';
     return 'やりますね';
 }
 
