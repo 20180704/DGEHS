@@ -338,11 +338,11 @@ function shareText(score) {
     var date2 = new Date();
     deviation_time = (date2.getTime() - _date1.getTime())
     if (deviation_time > 23000) {
-        //return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
+        return '行啊你，大塘头都快被你扬了';
     }
     SubmitResults();
     if (score <= 49) return '再慢点火自己都灭了';
-    if (score <= 99) return '5楼无了';
+    if (score <= 99) return '5楼烧没了';
     if (score <= 149) return '3栋都被你炸没了';
     if (score <= 199) return '实验都被你扬了';
     return '啊这……';
