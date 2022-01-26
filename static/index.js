@@ -308,7 +308,7 @@ function showGameScoreLayer() {
     score_text+=deviation_time<23000?_gameScore:"<span style='color:red;'>"+_gameScore+"</span>";
     document.getElementById('GameScoreLayer-score').innerHTML = score_text;
     var bast = cookie('bast-score');
-    if(deviation_time<23000){
+    if(deviation_time<30000){
         if (!bast || _gameScore > bast) {
             bast = _gameScore;
             cookie('bast-score', bast, 100);
@@ -337,8 +337,8 @@ function backBtn() {
 function shareText(score) {
     var date2 = new Date();
     deviation_time = (date2.getTime() - _date1.getTime())
-    if (deviation_time > 23000) {
-        return '行啊你，大塘头都快被你扬了';
+    if (deviation_time > 30000) {
+        //return '行啊你，大塘头都快被你扬了';
     }
     SubmitResults();
     if (score <= 49) return '再慢点火自己都灭了';
